@@ -1,4 +1,4 @@
-{
+module.exports = {
     "env": {
         "es6": true,
         "browser": true,
@@ -43,9 +43,12 @@
         ],
         "eqeqeq": [
             "error"
-        ]
+        ],
+        'no-unused-vars': 'warn',
+        'no-console': 'warn'
     },
-    "globals": {
-        "fetch": true
-    }
-}
+    'globals': {
+        "fetch": true,
+        '__DEV__': true
+    },
+};
